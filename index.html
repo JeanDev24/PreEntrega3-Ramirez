@@ -10,41 +10,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- BS 5.1 finaliza -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./estilos/estilos.css">
-    <title>Cinnamons</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Canela Twist</title>
 </head>
 <body>
     <header>
-        <!-- Inicio navbar -->
-        <nav class="navbar navbar-expand-sm navbar-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">CRLove</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="d-flex justify-content-end collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paginas/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paginas/eventos.html">Eventos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paginas/rollsclub.html">Rolls Club</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+      <!-- Inicio navbar -->
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Canela Twist</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú Canela Twist</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
-        <div class="logo">LOGO</div>
-      <!-- Fin navbar -->
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./paginas/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./paginas/eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./paginas/canelaclub.html">Canela Club</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- fin navbar -->
     </header>
     <main>
             <!-- Inicio carousel -->
@@ -92,10 +100,10 @@
               </div>
         <!-- Fin carousel -->
     </main>
-        <div id="nosotros">
+        <div class="container">
             <section>
-                <h1 id="titulo2">NOSOTROS</h1>
-                <div class="sec2">
+                <h1 class="titulo">NOSOTROS</h1>
+                <div>
                 <p>¡Hola! Me llamo Jean Carlos y soy la fundador de Cinnamons Rolls Love! A mediados de 2020, en plena pandemia y en medio de la cuarentena, tuve tanto antojo de cinnamon rolls que me preparé unos cuantos.
 
                 Me quedaron deliciosos, pero era tanta la cantidad que tuve que regalarle a mis amigos y a los de mi esposo... ¡Y les encantó! Tanto así que comenzaron a pedirme que les vendiera. Tras varios meses me animé a crear una marca y cuenta en Instagram para empezar a vender por domicilio desde mi casa. La demanda fue tal que con muchísimo miedo renuncié a mi trabajo para recorrer un camino completamente desconocido y nuevo para mi, la cocina.
@@ -105,18 +113,22 @@
                 </div>
             </section>
         </div>
-    <footer>
-        <p>Todos lo derechos son reservados por copyright</p>
-        <div class="redes">
-            <a href="">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <footer class="footer">
+          <div class="footer-content">
+              <div class="social-icons">
+                  <a href="#" target="_blank">
+                      <img src="./multimedia/square-instagram.svg" alt="Instagram">
+                  </a>
+                  <a href="#" target="_blank">
+                      <img src="./multimedia/square-facebook.svg" alt="Facebook">
+                  </a>
+              </div>
+              <p><strong>Todos lo derechos son reservados por copyright</strong></p>
+          </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
   </body>
 </html>
