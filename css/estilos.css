@@ -29,10 +29,15 @@ header .navbar .offcanvas-body {
 header .navbar .offcanvas-body .nav-link {
   color: #ffffff;
 }
-
+.titulo{
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-bottom: 1%;
+  color: #EB7926;
+}
 .container {
   text-align: justify;
-  padding-bottom: 11%;
+  padding-bottom: 5%;
 }
 .container h1, .container .h1 {
   color: #EB7926;
@@ -47,13 +52,13 @@ section .titulo {
 
 .module {
   display: flex;
+  padding-bottom: 3%;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  border: 1px solid #ccc;
 }
 .module .image-column {
   flex: 1;
+  padding-left: 5%;
 }
 .module .image-column img {
   max-width: 40%;
@@ -67,6 +72,11 @@ section .titulo {
 .module .text-column p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.image-row{
+  flex: 1;
+  padding-bottom: 5%;
 }
 
 .footer {

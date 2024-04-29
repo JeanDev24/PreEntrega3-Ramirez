@@ -1,8 +1,20 @@
-$color1: #EB7926;
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+// $color1: #EB7926;
+/*
 html{
     height: 100%;
-}
+}*/
+
+$color1: black;
 
 body{
     display: flex;
@@ -34,9 +46,17 @@ header{
     }
 }
 
+.titulo{
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    color: #EB7926;
+}
+
 .container{
     text-align: justify;
-    padding-bottom: 11%;
+    padding-bottom: 5%;
+    position: absolute;
     h1{
         color: $color1;
     }
@@ -54,13 +74,13 @@ section{
 
 .module {
     display: flex;
+    padding-bottom: 3%;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    border: 1px solid #ccc;
 
     .image-column {
         flex: 1;
+        padding-left: 5%;
         img {
             max-width: 40%;
             height: auto;
@@ -75,6 +95,29 @@ section{
             font-size: 16px;
             line-height: 1.5;
         }
+    }
+}
+
+.image-module {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; // Adjust as needed
+
+    .image-row {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+section{
+    .image-row{
+        flex: 1;
+        padding-bottom: 5%;
     }
 }
 
